@@ -1,0 +1,20 @@
+.header {
+    float: left;
+    display: none;
+    visibility: hidden;
+    text-align: right;
+    margin-right: 10px;
+    padding-top: 8px;
+    margin-left:20px;
+
+    a {
+        color: $color-dark;
+        font-size: 20px;
+    }
+
+    @media (max-width: $screen-sm) {
+        display: inline;
+        visibility: visible;
+    }
+
+}

@@ -1,0 +1,143 @@
+
+.modal {
+
+    .modal-content {
+        background-color: #f6fafc;
+        width: 100%;
+        max-width: 1200px;
+        min-height: 200px;
+        margin: 40px auto;
+        border-radius: 3px;
+        box-shadow: 0 1px 9px rgba(0,0,0,0.31);
+        font-family: 'Maven Pro', 'Source Sans Pro', Calibri;
+        color: $color-dark;
+
+        .modal-close {
+            padding-top: 10px;
+            padding-right: 10px;
+            height: 31px;
+            width: 100%;
+            i {font-size: 18px}
+            &:after {content: '';clear: both;}
+        }
+
+        .modal-body {
+            padding: 0 20px;
+            padding-bottom: 20px;
+
+            h1 {
+                font-size: 26px;
+                margin: 0;
+                font-family: 'Maven Pro', 'Source Sans Pro', Calibri;
+                font-weight: 500;
+                margin-bottom: 5px;
+                text-align: center;
+                margin-top:20px;
+            }
+
+            h2 {
+                font-size: 20px;
+                margin: 0;
+                font-family: 'Maven Pro', 'Source Sans Pro', Calibri;
+                color: #468;
+                font-weight: 500;
+                margin-bottom: 5px;
+            }
+
+            h4 {
+                font-size: 18px;
+                color: #444;
+                font-weight: 600;
+            }
+
+            h3 {
+                font-size: 16px;
+                color: #666;
+                font-weight: 600;
+                font-family: 'Maven Pro', 'Source Sans Pro', Calibri;
+            }
+
+            .patient-details {
+                ul {
+                    list-style: none;
+                    padding: 0;
+
+                    li {
+                        color: $color-teal;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+
+
+            .form-group {
+                margin: 0;
+                margin-bottom: 20px;
+
+                label {
+                    font-family: 'Maven Pro', 'Source Sans Pro', Calibri;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: $color-teal;
+                }
+            }
+
+            .form-control {
+                border: 2px solid #dbe7f2;
+                background-color: white;
+
+                &:focus {
+                    border: 2px solid #acc0d3;
+                }
+            }
+
+            .paragraph {
+                color: #666;
+                font-size: 15px;
+                font-weight: 500;
+            }
+
+
+            .next-appointment {
+                background-color: white;
+                padding: 10px;
+                padding-bottom: 15px;
+                margin-top: 20px;
+                border-radius: 4px;
+                box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.055);
+
+                h5 {
+                    margin: 0;
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                }
+
+                i {margin-right: 5px;}
+
+                .next-details {
+                    color: $color-teal;
+                    text-transform: capitalize;
+
+                    span {
+                        color: $color-blue-paypal;
+                        cursor: pointer;
+                    }
+                }
+
+                .next-right {
+                    float: right;
+                }
+
+                .time {
+                    font-weight: 500;
+                    font-size: 22px;
+                    margin-bottom: 6px;
+
+                    span {font-size: 16px}
+                }
+            }
+
+        }
+    }
+
+}

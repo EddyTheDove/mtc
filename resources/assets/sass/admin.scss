@@ -1,0 +1,42 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab|Athiti);
+
+// Variables
+@import "modules/admin/flaticon";
+@import "utils/variables";
+@import "bootstrap";
+@import "utils/xl";
+@import "utils/mixins";
+@import "utils/toaster";
+@import "utils/datepicker";
+@import "utils/alert";
+@import "utils/tabs";
+@import "utils/form";
+@import "utils/block";
+@import "utils/tags";
+
+@include paddingAll;
+@include paddingTop;
+@include paddingBottom;
+@include paddingLeftRight;
+@include marginAll;
+@include marginTop;
+@include marginBottom;
+@include marginLeft;
+@include marginRight;
+@include fontSizes;
+@include fontWeight;
+
+
+
+@import "utils/helper";
+@import "modules/admin/dashboard";
+@import "modules/admin/sidebar";
+@import "modules/admin/page";
+@import "modules/admin/material";
+@import "modules/admin/table";
+@import "modules/admin/modal";
+@import "modules/admin/header";

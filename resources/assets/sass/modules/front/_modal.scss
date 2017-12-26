@@ -1,0 +1,97 @@
+.modal-content {
+    // background-color: $body-bg;
+    background-color: #fff;
+}
+
+.modal-backdrop {
+    z-index: 0;
+}
+
+.mtc-modal {
+    .modal {
+        .modal-content {
+            background-color: #f4f7fe;
+            width: 100%;
+            max-width: 1200px;
+            min-height: 200px;
+            margin: 40px auto;
+            border-radius: 4px;
+            box-shadow: 0 1px 9px rgba(0,0,0,0.31);
+            color: $color-dark;
+
+            .modal-close {
+                padding-top: 10px;
+                padding-right: 10px;
+                height: 31px;
+                width: 100%;
+                i {font-size: 18px}
+                &:after {content: '';clear: both;}
+            }
+
+            .modal-body {
+                padding: 0 20px;
+                padding-bottom: 20px;
+
+                h2 {
+                    font-size: 26px;
+                    margin: 0;
+                    font-family: 'Source Sans Pro', Calibri;
+                    color: #468;
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+    }
+}
+
+.service-modal {
+    .modal {
+        .modal-content {
+            background-color: white;
+            width: 100%;
+            max-width: 1200px;
+            min-height: 200px;
+            margin: 40px auto;
+            border-radius: 4px;
+
+            .modal-body {
+                .heading {
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: $color-dark;
+                    margin-bottom: 10px;
+                    height: 75px;
+                    margin-bottom: 10px;
+
+                    .name {
+                        padding-top:20px;
+                    }
+
+                    .icon {
+                        float: left;
+                        margin-right: 20px;
+
+                        i {
+                            font-size: 60px;
+                            &.red { color: $color-red }
+                            &.blue { color: $color-blue-presumi }
+                            &.purple { color: $color-purple }
+                            &.orange { color: #f80 }
+                            &.green { color: $color-greener }
+                            &.dark { color: $color-dark }
+                            &.third { color: $color-third }
+                        }
+                    }
+                }
+            }
+
+            .content {
+                font-size: 16px;
+                width: 100%;
+                text-align: left;
+            }
+        }
+    }
+}

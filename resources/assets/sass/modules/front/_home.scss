@@ -1,0 +1,156 @@
+.home-page {
+    background-color: white;
+
+    .h3 {
+        color: $color-teal;
+    }
+
+    .home-intro {
+        width: 100%;
+        min-height: 500px;
+        background-image:url('../img/intro-bg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding:0;
+        padding-bottom: 40px;
+        background-color: white;
+
+        .motto {
+            font-style: italic;
+            padding: 0;
+            font-size: 16px;
+        }
+
+        .message {
+            font-size: 42px;
+            font-weight: 700;
+            color: $color-dark;
+            width: 90%;
+            max-width: 500px;
+            margin-top: 100px;
+            line-height: 50px;
+
+            h1 {
+                font-weight: 600;
+                font-family: Calibri;
+            }
+
+            span {
+                color: $color-primary;
+            }
+        }
+
+        .phones {
+            font-size: 22px;
+            line-height: 23px;
+            margin-top: 60px;
+            color: $color-dark;
+            font-weight: 600;
+            margin-bottom: 40px;
+            text-align: left;
+
+            i {
+                margin-right: 10px;
+            }
+        }
+
+        @media (max-width: $screen-sm) {
+            min-height: 300px;
+
+            .message {
+                font-size: 28px;
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .home-services {
+        padding-top:40px;
+        padding-bottom: 80px;
+        width: 100%;
+        background-color: #eff2f6;
+        @include skewY(4deg);
+
+        .container {
+            @include skewY(-4deg);
+        }
+
+        ._s-items {
+            margin-top:40px;
+            @include icon();
+        }
+    }
+
+    .home-statement {
+        @include skewY(-4deg);
+        background-color: white;
+        padding: 60px 0;
+        padding-bottom: 80px;
+        margin-top:-40px;
+
+        .container {
+            @include skewY(4deg);
+        }
+
+        .photo {
+            width: 100%;
+            margin-bottom: 30px;
+
+            img {
+                border-radius: 10px;
+            }
+        }
+
+        ._statement {
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 400;
+            font-family: 'Source Sans Pro';
+        }
+    }
+
+    .home-lost {
+        padding-top: 60px;
+        padding-bottom: 40px;
+
+        .search-container {
+            margin-top:20px;
+        }
+
+        .form {
+            .form-control {
+                background-color: #fff;
+                border: 2px solid #e0e9f6;
+                padding-left: 20px;
+
+                &.input-lg {
+                    line-height: 60px;
+                    height: 60px;
+                    font-size: 20px;
+                }
+            }
+
+            .btn-lg {
+                height: 60px;
+                line-height: 40px;
+            }
+        }
+
+
+        ._explain {
+            font-size: 18px;
+            color: $color-teal;
+            margin-top:30px;
+        }
+    }
+
+    .home-map {
+        .address {
+            font-size: 18px;
+            color: $color-teal;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    }
+}
