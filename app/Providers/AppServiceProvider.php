@@ -19,7 +19,7 @@ class AppServiceProvider extends ServiceProvider
     {
         Schema::defaultStringLength(191);
 
-        $set = [];
+        $set = Settings::find(1);
         View::share('settings', $set);
     }
 
