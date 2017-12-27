@@ -12,8 +12,7 @@ class ModuleController extends Controller
     {
         try
         {
-            $services = Module::orderBy('id', 'desc')
-            ->get();
+            $services = Module::get();
 
             return view('front.services.index', ['services' => $services]);
         }

@@ -3,7 +3,7 @@
         <div class="h1">Services</div>
         <div class="h3"><i class="flaticon-minus"></i> What we do</div>
 
-        {{-- <div class="_s-items">
+        <div class="_s-items">
             <div class="row">
                 <div class="col-sm-4 col-md-3">
                     <div class="_s-item">
@@ -135,7 +135,7 @@
                     </div>
                 </div>
             </div>
-        </div> --}}
+        </div> 
 
         <Services></Services>
 

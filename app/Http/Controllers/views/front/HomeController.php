@@ -16,4 +16,10 @@ class HomeController extends Controller
 
         return view('front.home.index', compact('statement', 'services'));
     }
+
+    public function statement ()
+    {
+        $page = Page::where('slug', 'statement')->first();
+        return view('front.pages.statement', compact('page'));
+    }
 }
