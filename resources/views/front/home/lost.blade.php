@@ -12,7 +12,7 @@
 
 
         <div class="search-container">
-            <form class="form" action="/lost" method="get">
+            <form class="form" action="/finder" method="get">
                 <div class="row">
                     <div class="col-sm-8 col-md-9">
                         <div class="form-group elevated">
