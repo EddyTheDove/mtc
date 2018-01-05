@@ -38,10 +38,10 @@
                     <div class="h4 bold mt-10">Emails</div>
 
                     <div class="fs-18 pb-20">
-                        kkbonteh@gicmtc.com
+                        <a href="mailto:kkbonteh@gicmtc.com">kkbonteh@gicmtc.com</a>
 
                         <br>
-                        mirrortheatreco@gicmtc.com
+                        <a href="mailto:mirrortheatreco@gicmtc.com">mirrortheatreco@gicmtc.com</a>
                     </div>
 
                 </div>
