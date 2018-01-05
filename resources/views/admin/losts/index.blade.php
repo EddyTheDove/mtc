@@ -21,6 +21,42 @@
     <section class="page page-white">
         <div class="container-fluid">
 
+            <div class="mt-10">
+                <div class="row">
+                    <form class="form" action="" method="get">
+                        <div class="col-sm-4">
+                            <div class="form-select grey">
+                                <select class="" name="status">
+                                    <option value="">All</option>
+                                    <option value="available" {{ Request::get('status') == 'available' ? 'selected' : '' }}>Available</option>
+                                    <option value="collected" {{ Request::get('status') == 'collected' ? 'selected' : '' }}>Collected</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-8">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <div class="form-group">
+                                        <input type="text"
+                                        name="keywords"
+                                        class="form-control input-lg"
+                                        value="{{ Request::get('keywords') }}"
+                                        placeholder="Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <button type="submit" class="btn btn-lg btn-blue btn-block">
+                                        Filter
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
             <div class="">
                 <table class="table table-striped">
                     <thead>
@@ -47,6 +83,10 @@
             <!-- End of table -->
         </div>
     </section>
+
+    <div class="pagination pagination-lg ml-20">
+        {{ $items->links() }}
+    </div>
 
     @include('admin.losts.create')
 
