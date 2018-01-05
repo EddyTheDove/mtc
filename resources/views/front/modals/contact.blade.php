@@ -35,6 +35,15 @@
                         {{ $settings->phone3 }} - {{ $settings->phone4 }}
                     </div>
 
+                    <div class="h4 bold mt-10">Emails</div>
+
+                    <div class="fs-18 pb-20">
+                        kkbonteh@gicmtc.com
+
+                        <br>
+                        mirrortheatreco@gicmtc.com
+                    </div>
+
                 </div>
             </div>
         </div>
