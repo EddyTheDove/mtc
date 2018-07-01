@@ -64,6 +64,8 @@
                             <th>Name</th>
                             <th>Type</th>
                             <th>Status</th>
+                            <th>Location</th>
+                            <th>Issued By</th>
                             <th>Updated</th>
                         </tr>
                     </thead>
@@ -74,6 +76,8 @@
                                 <td class="bold">{{ $item->name }}</td>
                                 <td>{{ $item->type }}</td>
                                 <td>{{ $item->status }}</td>
+                                <td>{{ $item->location ? $item->location : 'N/A' }}</td>
+                                <td>{{ $item->issued_by ? $item->issued_by : 'N/A' }}</td>
                                 <td>{{ date('d/m/Y H:i', strtotime($item->created_at)) }}</td>
                             </tr>
                         @endforeach
