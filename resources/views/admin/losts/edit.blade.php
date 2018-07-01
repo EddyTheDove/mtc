@@ -4,7 +4,7 @@
     <div class="page-heading">
         <div class="buttons">
             <a href="{{ route('losts.index') }}" class="btn btn-lg btn-grey">
-                <i class="flaticon-undo"></i> Cancel
+                <i class="flaticon-undo"></i> Back
             </a>
         </div>
 
@@ -24,20 +24,46 @@
                     <div class="col-sm-8">
                         <div class="block">
                             <div class="block-content">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Holder's name</label>
+                                            <input type="text" name="name" value="{{ $lost->name }}"
+                                            required
+                                            placeholder="Holder's name"
+                                            class="form-control input-lg">
+                                        </div>
+                                    </div>
 
-                                <div class="form-group">
-                                    <label>Holder's name</label>
-                                    <input type="text" name="name" value="{{ $lost->name }}"
-                                    required
-                                    placeholder="Holder's name"
-                                    class="form-control input-lg">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Document No</label>
+                                            <input type="text" name="number" value="{{ $lost->number }}"
+                                                placeholder="Document No"
+                                                class="form-control input-lg">
+                                        </div>
+                                    </div>
                                 </div>
 
-                                <div class="form-group">
-                                    <label>Document No</label>
-                                    <input type="text" name="number" value="{{ $lost->number }}"
-                                        placeholder="Document No"
-                                        class="form-control input-lg">
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Location</label>
+                                            <input type="text" name="location" value="{{ $lost->location }}"
+                                                placeholder="Location"
+                                                class="form-control input-lg">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label>Issued By</label>
+                                            <input type="text" name="issued_by" value="{{ $lost->issued_by }}"
+                                                placeholder="Issued by"
+                                                class="form-control input-lg">
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <hr>

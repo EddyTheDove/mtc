@@ -45,12 +45,25 @@ class LostController extends Controller
     }
 
 
+    /**
+     * Store new lost item
+     * @param  Request $request [description]
+     * @return [type]           [description]
+     */
     public function store(Request $request)
     {
         Lost::create($request->except(['_token']));
         return redirect()->back()->with('message', 'New item successfully added');
     }
 
+
+
+    /**
+     * Update existing lost item
+     * @param  Request $request [description]
+     * @param  [type]  $id      [description]
+     * @return [type]           [description]
+     */
     public function update (Request $request, $id)
     {
         Lost::where('id', $id)->update($request->except(['_method', '_token']));
