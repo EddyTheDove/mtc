@@ -50,6 +50,28 @@
                     </div>
 
 
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label>Location</label>
+                                <input type="text" name="location" value="{{ old('location') }}"
+                                    placeholder="Location"
+                                    class="form-control input-lg">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label>Issued By</label>
+                                <input type="text" name="issued_by" value="{{ old('issued_by') }}"
+                                    placeholder="Issued by"
+                                    class="form-control input-lg">
+                            </div>
+                        </div>
+                    </div>
+
+
                     <div class="mt-20 text-right">
                         <button class="btn btn-green input-lg w-200" type="submit">
                             <i class="flaticon-check"></i> Save Item
