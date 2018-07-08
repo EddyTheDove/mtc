@@ -13,6 +13,7 @@
             <li><a href="/">Home</a></li>
             <li><a href="/services">Services</a></li>
             <li><a href="/finder">Lost & Found</a></li>
+            <li><a href="/holiday">Holiday</a></li>
             <li>
                 <a href="#" data-toggle="modal" data-target="#contactModal">
                     Contact
