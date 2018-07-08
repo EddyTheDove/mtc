@@ -16,3 +16,4 @@ Route::get('logout', 'views\front\AuthController@logout')->name('logout');
 Route::get('services', 'views\front\ModuleController@index');
 Route::get('finder', 'views\front\LostController@index');
 Route::get('statement', 'views\front\HomeController@statement');
+Route::get('{slug}', 'views\front\PageController@show');
