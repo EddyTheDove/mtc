@@ -83,7 +83,7 @@
                                     </div>
                                 </div>
 
-                                <div class="hidden-xs col-sm-6 col-md-3">
+                                <div class="hidden-xs col-sm-6 col-md-2">
                                     <div class="_item_column">
                                         <div class="_value">
                                             {{ ucfirst($i->type) }}
@@ -94,13 +94,24 @@
                                     </div>
                                 </div>
 
-                                <div class="hidden-xs hidden-sm col-md-3">
+                                <div class="hidden-xs hidden-sm col-md-2">
                                     <div class="_item_column">
                                         <div class="_value">
                                             {{ ucfirst($i->status) }}
                                         </div>
                                         <div class="_label">
                                             Status
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="hidden-xs hidden-sm col-md-4">
+                                    <div class="_item_column">
+                                        <div class="_value">
+                                            {{ ucfirst($i->location) }}
+                                        </div>
+                                        <div class="_label">
+                                            Location
                                         </div>
                                     </div>
                                 </div>
