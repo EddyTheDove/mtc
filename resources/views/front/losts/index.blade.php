@@ -125,6 +125,14 @@
                 </div>
             @endif
 
+
+            <div class="mt-40">
+                <p>
+                    If you could not find what you were looking for, please
+                    <a href="#" data-toggle="modal" data-target="#contactModal">contact us</a>
+                </p>
+            </div>
+
         </div>
     </section>
 @endsection
