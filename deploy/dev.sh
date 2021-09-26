@@ -1,4 +1,4 @@
 
-npm run prod
+# npm run prod
 
-rsync -rav --delete --exclude-from=.excludes ./ eddythedove@dreamhost:/home/eddythedove/gicmtc.com
+rsync -rav --delete --exclude-from=.excludes ./ root@digital:/var/www/mtc
