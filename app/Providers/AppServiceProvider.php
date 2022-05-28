@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\Page;
 use App\Models\Settings;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
@@ -19,8 +20,11 @@ class AppServiceProvider extends ServiceProvider
     {
         Schema::defaultStringLength(191);
 
-        // $set = Settings::find(1);
-        // View::share('settings', $set);
+        $set = Settings::find(1);
+        $pages = Page::where('status', 'published')->get();
+
+        View::share('pages', $pages);
+        View::share('settings', $set);
     }
 
     /**
