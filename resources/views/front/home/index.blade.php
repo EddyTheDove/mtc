@@ -9,8 +9,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:title" content="GIC MTC | Mirror Theatre Co.">
         <meta property="og:description" content="Inspiring Talents Through Language and Theatre">
-        <meta property="og:image" content="http://gicmtc.com/assets/img/intro-bg.jpg"/>
-        <meta name="twitter:image" content="http://gicmtc.com/assets/img/intro-bg.jpg">
+        <meta property="og:image" content="http://gicmtc.com/assets/img/statement.jpg"/>
+        <meta name="twitter:image" content="http://gicmtc.com/assets/img/statement.jpg">
         <meta name="twitter:title" content="GIC MTC | Mirror Theatre Co.">
         <meta name="twitter:description" content="Inspiring Talents Through Language and Theatre">
         <link rel="stylesheet" href="/assets/css/app.min.css">
