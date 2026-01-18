@@ -3,15 +3,16 @@
 namespace App\Policies;
 
 use App\Models\User;
-use Illuminate\Auth\Access\HandlesAuthorization;
 
 class UserPolicy
 {
-    use HandlesAuthorization;
-
-
     public function admin(User $user) {
-        return $user->role->permissions->contains('name', 'create_post');
+        // Check if user has a role and permissions
+        if (!$user->role) {
+            return false;
+        }
+        
+        return $user->role->permissions()->where('name', 'create_post')->exists();
     }
 
 

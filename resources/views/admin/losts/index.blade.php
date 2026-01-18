@@ -28,8 +28,8 @@
                             <div class="form-select grey">
                                 <select class="" name="status">
                                     <option value="">All</option>
-                                    <option value="available" {{ Request::get('status') == 'available' ? 'selected' : '' }}>Available</option>
-                                    <option value="collected" {{ Request::get('status') == 'collected' ? 'selected' : '' }}>Collected</option>
+                                    <option value="available" {{ request()->input('status') == 'available' ? 'selected' : '' }}>Available</option>
+                                    <option value="collected" {{ request()->input('status') == 'collected' ? 'selected' : '' }}>Collected</option>
                                 </select>
                             </div>
                         </div>
@@ -41,7 +41,7 @@
                                         <input type="text"
                                         name="keywords"
                                         class="form-control input-lg"
-                                        value="{{ Request::get('keywords') }}"
+                                        value="{{ request()->input('keywords') }}"
                                         placeholder="Name">
                                     </div>
                                 </div>

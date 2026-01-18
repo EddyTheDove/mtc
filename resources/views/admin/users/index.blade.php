@@ -16,7 +16,7 @@
                                 <select class="" name="role">
                                     <option value="">All</option>
                                     @foreach($roles as $role)
-                                        <option value="{{ $role->name }}" {{ Request::get('role') == $role->
+                                        <option value="{{ $role->name }}" {{ request()->input('role') == $role->
                                             name ? 'selected' : '' }}>
                                             {{ $role->name }}
                                         </option>
@@ -32,7 +32,7 @@
                                         <input type="text"
                                         name="keywords"
                                         class="form-control input-lg"
-                                        value="{{ Request::get('keywords') }}"
+                                        value="{{ request()->input('keywords') }}"
                                         placeholder="First name, last name or username">
                                     </div>
                                 </div>

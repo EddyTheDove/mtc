@@ -1,8 +1,11 @@
 <?php
 
-use Illuminate\Database\Seeder;
-use App\Models\User;
+namespace Database\Seeders;
 
+use App\Models\User;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 
 class UsersTableSeeder extends Seeder
 {
@@ -22,7 +25,7 @@ class UsersTableSeeder extends Seeder
             'firstname' => 'John',
             'lastname'  => 'Doe',
             'is_active' => 1,
-            'api_token' => str_random(128)
+            'api_token' => Str::random(128)
         ]);
     }
 }

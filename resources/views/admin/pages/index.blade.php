@@ -26,8 +26,8 @@
                             <div class="form-select grey">
                                 <select class="" name="status">
                                     <option value="">All</option>
-                                    <option value="published" {{ Request::get('status') == 'published' ? 'selected' : '' }}>Published</option>
-                                    <option value="unpublished" {{ Request::get('status') == 'unpublished' ? 'selected' : '' }}>Unpublished</option>
+                                    <option value="published" {{ request()->input('status') == 'published' ? 'selected' : '' }}>Published</option>
+                                    <option value="unpublished" {{ request()->input('status') == 'unpublished' ? 'selected' : '' }}>Unpublished</option>
                                 </select>
                             </div>
                         </div>
@@ -39,7 +39,7 @@
                                         <input type="text"
                                         name="keywords"
                                         class="form-control input-lg"
-                                        value="{{ Request::get('keywords') }}"
+                                        value="{{ request()->input('keywords') }}"
                                         placeholder="Page title">
                                     </div>
                                 </div>

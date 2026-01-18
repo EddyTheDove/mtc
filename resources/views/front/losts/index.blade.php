@@ -20,7 +20,7 @@
                                 <input type="text"
                                     name="keywords"
                                     class="search-input elevated"
-                                    value="{{ Request::get('keywords') }}"
+                                    value="{{ request()->input('keywords') }}"
                                     placeholder="Enter your name or someone else's here"
                                     required>
                             </div>
@@ -41,7 +41,7 @@
                                 name="type">
                                 <option value="">Show All Items</option>
                                 @foreach($types as $type)
-                                    <option value="{{ $type }}" {{ Request::get('type') === $type ? 'selected' : '' }}>{{ ucfirst($type) }}</option>
+                                    <option value="{{ $type }}" {{ request()->input('type') === $type ? 'selected' : '' }}>{{ ucfirst($type) }}</option>
                                 @endforeach
                             </select>
                         </div>

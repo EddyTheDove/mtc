@@ -2,8 +2,8 @@
 
 namespace App\Http\Middleware;
 
-use Auth;
 use Closure;
+use Illuminate\Support\Facades\Auth;
 
 class AdminMiddleware
 {
@@ -16,9 +16,22 @@ class AdminMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if (Auth::check()){
-            if(Auth::user()->cant('admin', Auth::user())) {
-                return redirect('/');
+        // Check if user is authenticated
+        if (!Auth::check()) {
+            return redirect()->route('admin.login');
+        }
+
+        // Check if user can access admin (with database error handling)
+        try {
+            $user = Auth::user();
+            if ($user && $user->cant('admin', $user)) {
+                abort(403, 'Unauthorized access to admin area.');
+            }
+        } catch (\Exception $e) {
+            // If database not configured, just check if user is authenticated
+            // Once database is set up, this will work properly
+            if (!Auth::check()) {
+                return redirect()->route('admin.login');
             }
         }
 

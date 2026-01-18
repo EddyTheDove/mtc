@@ -9,11 +9,12 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Foundation\Auth\ThrottlesLogins;
+use Illuminate\Support\Facades\RateLimiter;
+use Illuminate\Validation\ValidationException;
 
 class AuthController extends Controller
 {
-    use ThrottlesLogins;
+    // Removed ThrottlesLogins trait - replaced with RateLimiter in Laravel 12
 
     public function login() {
         return view('admin.auth.login');

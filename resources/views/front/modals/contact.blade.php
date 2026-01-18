@@ -18,8 +18,10 @@
 
                     <div class="address fs-18">
                         MTC Lost Property Office <br>
-                        {{ $settings->addresse_street }} <br>
-                        {{ $settings->addresse_suburb }}, Yaounde - Cameroon <br>
+                        @if(!empty($settings))
+                            {{ $settings->addresse_street }} <br>
+                            {{ $settings->addresse_suburb }}, Yaounde - Cameroon <br>
+                        @endif
                     </div>
 
 
@@ -28,11 +30,15 @@
 
                     <div class="fs-18 pb-20">
                         <i class="flaticon-telephone"></i>
-                        {{ $settings->phone }} - {{ $settings->phone2 }}
+                        @if(!empty($settings))
+                            {{ $settings->phone }} - {{ $settings->phone2 }}
+                        @endif
 
                         <br>
                         <i class="flaticon-mobile"></i>
-                        {{ $settings->phone3 }} - {{ $settings->phone4 }}
+                        @if(!empty($settings))
+                            {{ $settings->phone3 }} - {{ $settings->phone4 }}
+                        @endif
                     </div>
 
                     <div class="h4 bold mt-10">Emails</div>
